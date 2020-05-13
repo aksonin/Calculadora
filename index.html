@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de viaticos</title>
+    
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap" rel="stylesheet"
+    <!--Font awesome--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!--Link a css--> 
+    <link rel="stylesheet" href="styles.css">
+    <!--Link a js--> 
+    <script src="viaticos.js"></script>
+</head>
+<body>
+
+    <div class="encabezado">
+        <img src="img/logo.png" alt="" class="logo">
+        <h2 class="texto"><center><strong>Hagamos el cálculo de los viaticos</strong></center> </h2>
+    </div>   
+    <div class="form">
+
+       <form id="calculadoraViaticos" method="post">
+
+        <!--Personas-->
+        <p><b>Personas</b></p>
+        <label for="personas">¿Cuantas personas van a viajar?</label>
+        <br>
+        <input type="number" id="pers" placeholder="Número de personas.">
+
+        <!--
+            
+        -->
+        <p><b>Destino</b></p>
+        <label for="destino">¿Cuanto cuesta el pasaje al lugar de destino?</label>
+        <br>
+        <input type="number" id="dest" placeholder="Monto del pasaje."> 
+
+        <!--Uso-->
+        <p><b>¿Cuantas veces se usará este transporte?</b></p>
+        <label for="uso">¿Cuantas veces usarás este transporte?</label>
+        <br>
+        <input type="number" id="use" placeholder="Introducir cantidad">
+
+        <!--Días-->
+        <p><b>Días</b></p>
+        <label for="dias">¿Cuantos días tomará la actividad?</label>
+        <br>
+        <input type="number" id="days" placeholder="Días de viaje."> 
+
+        <!--Movilidad interna-->
+        <p><b>Movilidad punto de partida</b></p>
+        <label for="mov-int">¿Cuanto necesitas para movilizarte en el lugar de partida?</label>
+        <br>
+        <input type="number" id="movint" placeholder="Monto de movilización.">
+
+        <!--Uso Mov. interna-->
+        <p><b>Número de veces que se usará esta movilidad</b></p>
+        <label for="uso-mov-int">¿Cuantas veces usarás este transporte?</label>
+        <br>
+        <input type="number" id="intuse" placeholder="Introducir cantidad">
+
+        <!--Movilidad externa-->
+        <p><b>Movilidad punto de llegada</b></p>
+        <label for="mov-ext">¿Cuanto necesitas para movilizarte en el lugar de llegada?</label>
+        <br>
+        <input type="number" id="movext" placeholder="Monto de movilización.">
+
+        <!--Uso Mov. externa-->
+        <p><b>Número de veces que se usará esta movilidad</b></p>
+        <label for="uso-mov-ext">¿Cuantas veces usarás este transporte?</label>
+        <br>
+        <input type="number" id="extuse" placeholder="Introducir cantidad">
+
+        <!--Hotel-->
+        <p><b>Hospedaje</b></p>
+        <label for="hospedaje">¿Cuantos días te vas a hospedar en el hotel?</label>
+        <br>
+        <input type="number" id="hotel" placeholder="Cuantas noches pasarás">
+
+        <!--Flete-->
+        <p><b>Flete</b></p>
+        <label for="hospedaje">¿Cuanto pagara por la movilización de equipos ida y vuelta?</label>
+        <br>
+        <input type="number" id="flete" placeholder="Ingresar monto">
+
+        <br>
+        <br>
+
+        <button type="button" onclick="calculo();">Calcular</button>
+
+        <p class="Resultado"><strong>El monto total de los viaticos es de: <span id="resultado"></span></strong></p>
+        <br>
+
+        </form>
+        
+    </div>
+       
+</div>
+    
+<section class="social">
+    <p>Contacto</p>
+
+    <div class="links">
+        <a href="https://www.facebook.com/aksonin">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/aksonin-perez-122219103/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/perezaksonin/">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        
+    </div>
+    <ul class="telefono">
+        <li>Teléfono:</li>
+        <li>957 181 593</li>
+    </ul>
+
+</body>
+</html>
