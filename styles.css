@@ -99,7 +99,7 @@ button:hover {
     font-size: 3rem;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   form {
     position: relative;
     height: 100%;
