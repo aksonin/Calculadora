@@ -9,33 +9,29 @@ let intuse = 0
 let movext = 0
 let extuse = 0
 let hotel = 0
-let flete = 0
-
+let flete = 1
 
 function calculo() {
     
-    pers = parseFloat(document.getElementById('pers').value)
-    dest = parseFloat(document.getElementById('dest').value)
-    dias = parseFloat(document.getElementById('days').value)
-    uso = parseFloat(document.getElementById('use').value)
-    movint = parseFloat(document.getElementById('movint').value)
-    intuse = parseFloat(document.getElementById('intuse').value)
-    movext = parseFloat(document.getElementById('movext').value)
-    extuse = parseFloat(document.getElementById('extuse').value)
-    hotel = parseFloat(document.getElementById('hotel').value)
-    flete = parseFloat(document.getElementById('flete').value)
+    pers = (document.getElementById('pers').value),
+    dest = (document.getElementById('dest').value),
+    dias = (document.getElementById('days').value),
+    uso = (document.getElementById('use').value),
+    movint = (document.getElementById('movint').value),
+    intuse = (document.getElementById('intuse').value),
+    movext = (document.getElementById('movext').value),
+    extuse = (document.getElementById('extuse').value),
+    hotel = (document.getElementById('hotel').value),
+    flete = (document.getElementById('flete').value)
 
-    if (pers===0 || dias ===0 ) {
+    if ((pers===0 || dias ===0) ) {
         alert("Revisa el valor en Días y personas. No puede ser 0 (cero)")
         document.getElementById('resultado').innerHTML = "Error"
     } else {
         let viaticos = ((pers * uso * dest) + (movint * intuse) + (movext * extuse) + (hotel * 50 * pers) + (dias * pers * 30) + flete) * 1.1
-    document.getElementById('resultado').innerHTML = Number(viaticos) + " Soles sin IGV"
+    document.getElementById('resultado').innerHTML = "El monto total de los viaticos es de: " + Number(viaticos) + " Soles sin IGV"
     }
     
-
-    
-
     console.log(typeof(viaticos));
 
     /*if (isNaN('viaticos')) {
@@ -44,8 +40,5 @@ function calculo() {
         document.getElementById('resultado').innerHTML = viaticos
     }*/
 
-   
-    
-    
-    
+
 }
