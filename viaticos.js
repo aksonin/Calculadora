@@ -29,7 +29,7 @@ function calculo() {
         document.getElementById('resultado').innerHTML = "Error"
     } else {
         let viaticos = ((pers * uso * dest) + (movint * intuse) + (movext * extuse) + (hotel * 50 * pers) + (dias * pers * 30) + flete) * 1.1
-    document.getElementById('resultado').innerHTML = "El monto total de los viaticos es de: " + Number(viaticos) + " Soles sin IGV"
+    document.getElementById('resultado').innerHTML = "El monto total de los viaticos es de: " + viaticos + " Soles sin IGV"
     }
     
     console.log(typeof(viaticos));
